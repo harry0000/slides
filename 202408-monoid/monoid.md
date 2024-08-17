@@ -46,8 +46,10 @@ $S$ の元 $e$ が存在して、$S$ の任意の元 $a$ に対して $e • a =
 - 減算
 - 除算
 - 冪演算
-- NAND
-- NOR
+    - $a^{b^c}$
+    - 必ず右から左に計算しないと正しい答えが得られない
+- [NAND](https://proofwiki.org/wiki/NAND_is_not_Associative)
+- [NOR](https://proofwiki.org/wiki/NOR_is_not_Associative)
 - [ベクトルの外積](https://w3e.kanazawa-it.ac.jp/math/category/vector/henkan-tex.cgi?target=/math/category/vector/gaiseki.html)
 
 ※ 「減算」は符号付き数値型の「加算」、「除算」は有理数型の「乗算」に変形できれば大丈夫ではある
@@ -369,3 +371,5 @@ object SLQ {
     - ac-library-rs is a rust port of AtCoder Library (ACL).
     - [Segtree](https://docs.rs/ac-library-rs/0.1.1/ac_library/segtree/struct.Segtree.html)
     - [Lazy Segtree](https://docs.rs/ac-library-rs/0.1.1/ac_library/lazysegtree/struct.LazySegtree.html)
+- [論理回路 第2回 論理ゲートを用いる](https://www.info.kindai.ac.jp/LC/lecture/LogicCircuits02.pdf)
+    - NANDとNORが結合則を満たさない証明など (P.27, 32, 59)
