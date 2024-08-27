@@ -75,8 +75,9 @@ $S$ の元 $e$ が存在して、$S$ の任意の元 $a$ に対して $e • a =
 
 - 項の順番を入れ替えると普通に結果は変わる $^{*1}$
     - `"abc" + "def"` $\neq$ `"def" + "abc"`
-    - `"1".invalidNel |+| "2".invalidNel // == Invalid(NonEmptyList("1", "2"))`
-    - `"2".invalidNel |+| "1".invalidNel // == Invalid(NonEmptyList("2", "1"))`
+    - `"1".invalidNel |+| "2".invalidNel`
+        - $=$ `Invalid(NonEmptyList("1", "2"))`
+        - $\neq$ `Invalid(NonEmptyList("2", "1"))` (入れ換えた場合)
 - 演算する順番は変えても OK
     - `("a" + "b") + "c"` = `"a" + ("b" + "c")` = `"abc"`
 
