@@ -347,19 +347,19 @@
 </li>
 <li>モノイドかどうか確認してみる
 <ul>
-<li>2 番目に大きい値の個数を管理したいので、1 番目に大きい値とその個数も一緒に管理する</li>
+<li>2 番目に大きい値の個数を管理したいので、1 番目に大きい値とその個数も一緒に管理します</li>
 <li>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-scala"><span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SLQ</span>(<span class="hljs-params">first: <span class="hljs-type">Int</span>, firstCount: <span class="hljs-type">Int</span>, second: <span class="hljs-type">Int</span>, secondCount: <span class="hljs-type">Int</span></span>)</span>
 </code></pre>
 </li>
 <li>このインスタンスが 2 つある場合、それらの中で 1 番目と 2 番目に大きい値の個数は計算できそう
 <ul>
-<li>この処理が「二項演算」になる</li>
+<li>この処理が「二項演算」になります</li>
 </ul>
 </li>
-<li>全部値が 0 なら、それが「単位元」になるのでは…？
+<li>値が全部 0 なら、それが「単位元」になるのでは…？
 <ul>
-<li>今回の場合 <code>SLQ(0, 0, -1, 0)</code> とか <code>SLQ(-1, 0, -2, 0)</code> でもよい</li>
+<li>今回の場合 <code>SLQ(0, 0, -1, 0)</code> とか <code>SLQ(-1, 0, -2, 0)</code> でもよいです</li>
 </ul>
 </li>
 <li>モノイドだ！</li>
